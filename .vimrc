@@ -48,18 +48,18 @@ filetype plugin indent on    " required
 
 set cindent
 set shiftwidth=4
-set tabstop=4   
-set expandtab   
-set softtabstop=4  
+set tabstop=4
+set expandtab
+set softtabstop=4
 set backspace=indent,eol,start
 
 set list
 set listchars=tab:>-
-scriptencoding utf-8 
-augroup highlightZenkakuSpace
+scriptencoding utf-8
+augroup highlightZenkakuTrailingSpace
     autocmd!
-    autocmd VimEnter,ColorScheme * highlight ZenkakuSpace term=underline ctermbg=Red guibg=Red
-    autocmd VimEnter,WinEnter * match ZenkakuSpace /　/
+    autocmd VimEnter,ColorScheme * highlight ZenkakuTrailingSpace term=underline ctermbg=Red guibg=Red
+    autocmd VimEnter,WinEnter * match ZenkakuTrailingSpace /　\|\s\+$/
 augroup END
 
 
