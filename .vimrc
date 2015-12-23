@@ -93,11 +93,13 @@ let g:syntastic_loc_list_height=6
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_javascript_checkers = ['jshint']
+""let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_typescript_checkers = ['tslint']
 let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_mode_map = {
       \ 'mode': 'active',
-      \ 'active_filetypes': ['javascript','ruby'],
+      \ 'active_filetypes': ['javascript','typescript','ruby'],
       \ 'passive_filetypes': []
       \ }
 let g:syntastic_enable_signs=1
