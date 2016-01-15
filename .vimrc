@@ -32,7 +32,7 @@ Plugin 'vim-scripts/gtags.vim'
 Plugin 'vim-scripts/Conque-GDB'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'mxw/vim-jsx'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -108,7 +108,4 @@ let g:syntastic_mode_map = {
 let g:syntastic_enable_signs=1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
-
-"settings for JSX
-let g:jsx_ext_required = 0
 
