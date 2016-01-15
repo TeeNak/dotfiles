@@ -1,0 +1,23 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+#following will not take effect on vim
+insert_final_newline = true
+
+[*.bat]
+end_of_line = crlf
+
+[*.{js,jsx}]
+indent_style = space
+indent_size = 4
+
+[*.rb]
+indent_style = space
+indent_size = 2
+
+[*.css]
+indent_style = space
+indent_size = 4
