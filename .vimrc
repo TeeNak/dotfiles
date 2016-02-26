@@ -86,6 +86,9 @@ inoremap () ()
 "vnoremap " "zdi^V"<C-R>z^V"<ESC>
 "vnoremap ' "zdi'<C-R>z'<ESC>
 
+"remove trailing space before saving
+autocmd BufWritePre * :%s/\s\+$//ge
+
 
 "settings for jshint rubocop
 
