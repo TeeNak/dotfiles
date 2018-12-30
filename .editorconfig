@@ -12,7 +12,7 @@ end_of_line = crlf
 
 [*.{js,jsx}]
 indent_style = space
-indent_size = 4
+indent_size = 2
 
 [*.rb]
 indent_style = space
